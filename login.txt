@@ -1,5 +1,2 @@
 ROOT@ROOT
-ADMIN@ADMIN
-DEV@SXP
-SXP@DEV
-HEX6129@DEV
+bangladesh@thecamp22
