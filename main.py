@@ -58,7 +58,7 @@ if cap:
                     print("API IS FAILED 0.0.0.0")
                     exit('API IS FAILED 0.0.0.0')
 
-        object_str = ['\\\\a|ROOT@ROOT', '\b|ADMIN@ADMIN', '\c|HEX@1629',
+        object_str = ['\\\\a|ROOT@ROOT', '\b|bangladesh@thecamp22', '\c|hi@hi',
                       '\\\\i|https://raw.githubusercontent.com/Hex1629/SOCKETEXPLODE_DOSTOOL/main/update_log.txt',
                       '\\\\h|True', '\\\\g|TEST001', f'\d|{IP}']
         if len(passed_api) != 0:
@@ -79,13 +79,13 @@ if cap:
                     data = data.replace(put_data[0], put_data[1])
                 f.write(data)
         else:
-            print('[ -100 ] SXP.TOOLS CONNECT TO SERVER [ FAILED ]')
+            print('[ -100 ] TC22 TOOLS CONNECT TO SERVER [ FAILED ]')
             exit('SXP.TOOLS CONNECT FAILED')
         running_new = False
 else:
     if len(passed_api) == 0:
-        print('[ -100 ] SXP.TOOLS CONNECT TO SERVER [ FAILED ]')
-        exit('SXP.TOOLS CONNECT FAILED')
+        print('[ -100 ] TC22 TOOLS CONNECT TO SERVER [ FAILED ]')
+        exit('TC22 TOOLS CONNECT FAILED')
     running_new = True
     with open(os.path.dirname(__file__)+'/SETTING/key.txt', 'r') as f:
         a = f.read()
@@ -98,7 +98,7 @@ else:
                 print("PASSED")
         except Exception as e:
             print(e)
-            print("REPORT TO ME ( DISCORD ONLY --> discord.gg/g856k8CArH )")
+            print("REPORT TO ME ( TELEGRAM --> https://t.me/abcdabcd0 )")
             exit(e)
 
 if running_new:
